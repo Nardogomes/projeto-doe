@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: "Playfair Display", serif;
+    font-family: 'Roboto Slab', serif;
     background-color: #f9f9f9;
 }
 
@@ -62,6 +62,10 @@ header button {
     margin: 60px 0;
 }
 
+header p {
+    font-size: 14px;
+}
+
 /* Form */
 section.form {
     display: grid;
@@ -103,6 +107,27 @@ main .donors {
 .blood {
     color: #ff4f4f;
     font-weight: bold;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blood::before {
+    content: "";
+    background-color: #ff4f4f22;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+}
+
+.donor p {
+    margin-top: 24px;
     font-size: 14px;
 }
 
